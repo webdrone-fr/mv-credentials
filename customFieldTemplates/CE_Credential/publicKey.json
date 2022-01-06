@@ -1,1 +1,27 @@
-{"code":"publicKey","description":"ssh public key","fieldType":"BINARY","accountLevel":"CE_Credential","appliesTo":"CE_Credential","useInheritedAsDefaultValue":false,"storageType":"SINGLE","valueRequired":false,"versionable":false,"triggerEndPeriodEvent":false,"allowEdit":true,"hideOnNew":false,"contentTypes":["application/octet-stream"],"fileExtensions":[],"maxFileSizeAllowedInKb":3,"saveOnExplorer":false,"guiPosition":"tab:Credential:0;field:12","identifier":false,"storages":["SQL"],"samples":[],"summary":false,"audited":false,"persisted":true,"filter":false,"unique":false}
+{
+  "code" : "publicKey",
+  "description" : "ssh public key",
+  "fieldType" : "BINARY",
+  "accountLevel" : "CE_Credential",
+  "appliesTo" : "CE_Credential",
+  "useInheritedAsDefaultValue" : false,
+  "storageType" : "SINGLE",
+  "valueRequired" : false,
+  "versionable" : false,
+  "triggerEndPeriodEvent" : false,
+  "allowEdit" : true,
+  "hideOnNew" : false,
+  "contentTypes" : [ "application/octet-stream" ],
+  "fileExtensions" : [ ],
+  "maxFileSizeAllowedInKb" : 3,
+  "saveOnExplorer" : false,
+  "guiPosition" : "tab:Credential:0;field:12",
+  "identifier" : false,
+  "storages" : [ "SQL" ],
+  "samples" : [ ],
+  "summary" : false,
+  "audited" : false,
+  "persisted" : true,
+  "filter" : false,
+  "unique" : false
+}
