@@ -19,8 +19,6 @@ public class Credential implements CustomEntity {
     @JsonIgnore()
     private DBStorageType storages;
 
-    private String refreshToken;
-
     @Override()
     public String getUuid() {
         return uuid;
@@ -36,14 +34,6 @@ public class Credential implements CustomEntity {
 
     public void setStorages(DBStorageType storages) {
         this.storages = storages;
-    }
-
-    public String getRefreshToken() {
-        return refreshToken;
-    }
-
-    public void setRefreshToken(String refreshToken) {
-        this.refreshToken = refreshToken;
     }
 
     @Override()
