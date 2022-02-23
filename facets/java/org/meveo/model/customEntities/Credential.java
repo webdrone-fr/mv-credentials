@@ -21,6 +21,8 @@ public class Credential implements CustomEntity {
 
     private String headerValue;
 
+    private String status;
+
     @Override()
     public String getUuid() {
         return uuid;
@@ -44,6 +46,14 @@ public class Credential implements CustomEntity {
 
     public void setHeaderValue(String headerValue) {
         this.headerValue = headerValue;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     @Override()
