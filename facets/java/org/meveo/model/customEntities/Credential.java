@@ -31,6 +31,8 @@ public class Credential implements CustomEntity {
 
     private String publicKey;
 
+    private Long credit;
+
     private Instant lastConnection;
 
     private String refreshToken;
@@ -97,6 +99,14 @@ public class Credential implements CustomEntity {
 
     public void setPublicKey(String publicKey) {
         this.publicKey = publicKey;
+    }
+
+    public Long getCredit() {
+        return credit;
+    }
+
+    public void setCredit(Long credit) {
+        this.credit = credit;
     }
 
     public Instant getLastConnection() {
