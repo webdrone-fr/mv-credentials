@@ -27,8 +27,6 @@ public class Credential implements CustomEntity {
 
     private Instant tokenExpiry;
 
-    private String publicKey;
-
     private Instant lastConnection;
 
     private String token;
@@ -89,14 +87,6 @@ public class Credential implements CustomEntity {
 
     public void setTokenExpiry(Instant tokenExpiry) {
         this.tokenExpiry = tokenExpiry;
-    }
-
-    public String getPublicKey() {
-        return publicKey;
-    }
-
-    public void setPublicKey(String publicKey) {
-        this.publicKey = publicKey;
     }
 
     public Instant getLastConnection() {
