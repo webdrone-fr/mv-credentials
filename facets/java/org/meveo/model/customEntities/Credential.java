@@ -41,6 +41,8 @@ public class Credential implements CustomEntity {
 
     private String authenticationType;
 
+    private String headerKey;
+
     private Long credit;
 
     private String refreshToken;
@@ -145,6 +147,14 @@ public class Credential implements CustomEntity {
 
     public void setAuthenticationType(String authenticationType) {
         this.authenticationType = authenticationType;
+    }
+
+    public String getHeaderKey() {
+        return headerKey;
+    }
+
+    public void setHeaderKey(String headerKey) {
+        this.headerKey = headerKey;
     }
 
     public Long getCredit() {
