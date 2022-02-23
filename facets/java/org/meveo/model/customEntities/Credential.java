@@ -23,8 +23,6 @@ public class Credential implements CustomEntity {
 
     private String apiKey;
 
-    private String domainName;
-
     private String passwordSecret;
 
     private String headerValue;
@@ -69,14 +67,6 @@ public class Credential implements CustomEntity {
 
     public void setApiKey(String apiKey) {
         this.apiKey = apiKey;
-    }
-
-    public String getDomainName() {
-        return domainName;
-    }
-
-    public void setDomainName(String domainName) {
-        this.domainName = domainName;
     }
 
     public String getPasswordSecret() {
