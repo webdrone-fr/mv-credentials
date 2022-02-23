@@ -30,8 +30,6 @@ public class Credential implements CustomEntity {
 
     private String status;
 
-    private String token;
-
     @JsonProperty(required = true)
     private String username;
 
@@ -90,14 +88,6 @@ public class Credential implements CustomEntity {
 
     public void setStatus(String status) {
         this.status = status;
-    }
-
-    public String getToken() {
-        return token;
-    }
-
-    public void setToken(String token) {
-        this.token = token;
     }
 
     public String getUsername() {
