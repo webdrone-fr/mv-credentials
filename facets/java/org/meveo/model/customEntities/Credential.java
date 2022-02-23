@@ -21,11 +21,7 @@ public class Credential implements CustomEntity {
     @JsonIgnore()
     private DBStorageType storages;
 
-    private String privateKey;
-
-    private String password;
-
-    private String domainName;
+    private String apiKey;
 
     private String headerValue;
 
@@ -33,15 +29,21 @@ public class Credential implements CustomEntity {
 
     private String publicKey;
 
-    private Long credit;
-
     private Instant lastConnection;
+
+    private String token;
+
+    private String privateKey;
+
+    private String password;
+
+    private String domainName;
+
+    private Long credit;
 
     private String refreshToken;
 
     private String status;
-
-    private String token;
 
     @JsonProperty(required = true)
     private String username;
@@ -63,28 +65,12 @@ public class Credential implements CustomEntity {
         this.storages = storages;
     }
 
-    public String getPrivateKey() {
-        return privateKey;
+    public String getApiKey() {
+        return apiKey;
     }
 
-    public void setPrivateKey(String privateKey) {
-        this.privateKey = privateKey;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getDomainName() {
-        return domainName;
-    }
-
-    public void setDomainName(String domainName) {
-        this.domainName = domainName;
+    public void setApiKey(String apiKey) {
+        this.apiKey = apiKey;
     }
 
     public String getHeaderValue() {
@@ -111,20 +97,52 @@ public class Credential implements CustomEntity {
         this.publicKey = publicKey;
     }
 
-    public Long getCredit() {
-        return credit;
-    }
-
-    public void setCredit(Long credit) {
-        this.credit = credit;
-    }
-
     public Instant getLastConnection() {
         return lastConnection;
     }
 
     public void setLastConnection(Instant lastConnection) {
         this.lastConnection = lastConnection;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    public String getPrivateKey() {
+        return privateKey;
+    }
+
+    public void setPrivateKey(String privateKey) {
+        this.privateKey = privateKey;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getDomainName() {
+        return domainName;
+    }
+
+    public void setDomainName(String domainName) {
+        this.domainName = domainName;
+    }
+
+    public Long getCredit() {
+        return credit;
+    }
+
+    public void setCredit(Long credit) {
+        this.credit = credit;
     }
 
     public String getRefreshToken() {
@@ -141,14 +159,6 @@ public class Credential implements CustomEntity {
 
     public void setStatus(String status) {
         this.status = status;
-    }
-
-    public String getToken() {
-        return token;
-    }
-
-    public void setToken(String token) {
-        this.token = token;
     }
 
     public String getUsername() {
