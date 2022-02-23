@@ -3,6 +3,7 @@ package org.meveo.model.customEntities;
 import org.meveo.model.CustomEntity;
 import java.util.List;
 import org.meveo.model.persistence.DBStorageType;
+import java.time.Instant;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -25,6 +26,8 @@ public class Credential implements CustomEntity {
     private String domainName;
 
     private String headerValue;
+
+    private Instant tokenExpiry;
 
     private String publicKey;
 
@@ -72,6 +75,14 @@ public class Credential implements CustomEntity {
 
     public void setHeaderValue(String headerValue) {
         this.headerValue = headerValue;
+    }
+
+    public Instant getTokenExpiry() {
+        return tokenExpiry;
+    }
+
+    public void setTokenExpiry(Instant tokenExpiry) {
+        this.tokenExpiry = tokenExpiry;
     }
 
     public String getPublicKey() {
