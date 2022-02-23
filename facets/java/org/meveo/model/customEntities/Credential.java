@@ -20,8 +20,6 @@ public class Credential implements CustomEntity {
     @JsonIgnore()
     private DBStorageType storages;
 
-    private String authenticationType;
-
     private String headerKey;
 
     private String refreshToken;
@@ -46,14 +44,6 @@ public class Credential implements CustomEntity {
 
     public void setStorages(DBStorageType storages) {
         this.storages = storages;
-    }
-
-    public String getAuthenticationType() {
-        return authenticationType;
-    }
-
-    public void setAuthenticationType(String authenticationType) {
-        this.authenticationType = authenticationType;
     }
 
     public String getHeaderKey() {
