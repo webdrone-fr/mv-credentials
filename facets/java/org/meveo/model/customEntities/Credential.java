@@ -23,27 +23,25 @@ public class Credential implements CustomEntity {
 
     private String apiKey;
 
-    private String headerValue;
-
-    private Instant tokenExpiry;
-
-    private Instant lastConnection;
-
-    private String token;
-
-    private String privateKey;
-
     private String domainName;
 
     private String passwordSecret;
+
+    private String headerValue;
+
+    private Instant tokenExpiry;
 
     private String authenticationType;
 
     private String headerKey;
 
+    private Instant lastConnection;
+
     private String refreshToken;
 
     private String status;
+
+    private String token;
 
     @JsonProperty(required = true)
     private String username;
@@ -73,46 +71,6 @@ public class Credential implements CustomEntity {
         this.apiKey = apiKey;
     }
 
-    public String getHeaderValue() {
-        return headerValue;
-    }
-
-    public void setHeaderValue(String headerValue) {
-        this.headerValue = headerValue;
-    }
-
-    public Instant getTokenExpiry() {
-        return tokenExpiry;
-    }
-
-    public void setTokenExpiry(Instant tokenExpiry) {
-        this.tokenExpiry = tokenExpiry;
-    }
-
-    public Instant getLastConnection() {
-        return lastConnection;
-    }
-
-    public void setLastConnection(Instant lastConnection) {
-        this.lastConnection = lastConnection;
-    }
-
-    public String getToken() {
-        return token;
-    }
-
-    public void setToken(String token) {
-        this.token = token;
-    }
-
-    public String getPrivateKey() {
-        return privateKey;
-    }
-
-    public void setPrivateKey(String privateKey) {
-        this.privateKey = privateKey;
-    }
-
     public String getDomainName() {
         return domainName;
     }
@@ -127,6 +85,22 @@ public class Credential implements CustomEntity {
 
     public void setPasswordSecret(String passwordSecret) {
         this.passwordSecret = passwordSecret;
+    }
+
+    public String getHeaderValue() {
+        return headerValue;
+    }
+
+    public void setHeaderValue(String headerValue) {
+        this.headerValue = headerValue;
+    }
+
+    public Instant getTokenExpiry() {
+        return tokenExpiry;
+    }
+
+    public void setTokenExpiry(Instant tokenExpiry) {
+        this.tokenExpiry = tokenExpiry;
     }
 
     public String getAuthenticationType() {
@@ -145,6 +119,14 @@ public class Credential implements CustomEntity {
         this.headerKey = headerKey;
     }
 
+    public Instant getLastConnection() {
+        return lastConnection;
+    }
+
+    public void setLastConnection(Instant lastConnection) {
+        this.lastConnection = lastConnection;
+    }
+
     public String getRefreshToken() {
         return refreshToken;
     }
@@ -159,6 +141,14 @@ public class Credential implements CustomEntity {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
     }
 
     public String getUsername() {
