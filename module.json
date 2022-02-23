@@ -1,11 +1,9 @@
 {
-  "code" : "credentials",
+  "code" : "mv-credentials",
   "description" : "credentials",
   "license" : "GPL",
   "currentVersion" : "1.2.5",
   "isInDraft" : true,
-  "meveoVersionBase" : "6.11.0",
-  "moduleItems" : [ ],
   "moduleDependencies" : [ ],
   "moduleFiles" : [ ]
 }
