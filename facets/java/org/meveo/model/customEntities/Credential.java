@@ -39,6 +39,8 @@ public class Credential implements CustomEntity {
 
     private String domainName;
 
+    private String authenticationType;
+
     private Long credit;
 
     private String refreshToken;
@@ -135,6 +137,14 @@ public class Credential implements CustomEntity {
 
     public void setDomainName(String domainName) {
         this.domainName = domainName;
+    }
+
+    public String getAuthenticationType() {
+        return authenticationType;
+    }
+
+    public void setAuthenticationType(String authenticationType) {
+        this.authenticationType = authenticationType;
     }
 
     public Long getCredit() {
