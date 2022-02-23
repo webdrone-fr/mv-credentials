@@ -45,8 +45,6 @@ public class Credential implements CustomEntity {
 
     private String headerKey;
 
-    private Long credit;
-
     private String refreshToken;
 
     private String status;
@@ -165,14 +163,6 @@ public class Credential implements CustomEntity {
 
     public void setHeaderKey(String headerKey) {
         this.headerKey = headerKey;
-    }
-
-    public Long getCredit() {
-        return credit;
-    }
-
-    public void setCredit(Long credit) {
-        this.credit = credit;
     }
 
     public String getRefreshToken() {
