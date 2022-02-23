@@ -23,8 +23,6 @@ public class Credential implements CustomEntity {
 
     private String apiKey;
 
-    private Instant tokenExpiry;
-
     private String authenticationType;
 
     private String headerKey;
@@ -63,14 +61,6 @@ public class Credential implements CustomEntity {
 
     public void setApiKey(String apiKey) {
         this.apiKey = apiKey;
-    }
-
-    public Instant getTokenExpiry() {
-        return tokenExpiry;
-    }
-
-    public void setTokenExpiry(Instant tokenExpiry) {
-        this.tokenExpiry = tokenExpiry;
     }
 
     public String getAuthenticationType() {
