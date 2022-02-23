@@ -20,8 +20,6 @@ public class Credential implements CustomEntity {
     @JsonIgnore()
     private DBStorageType storages;
 
-    private String apiKey;
-
     private String authenticationType;
 
     private String headerKey;
@@ -48,14 +46,6 @@ public class Credential implements CustomEntity {
 
     public void setStorages(DBStorageType storages) {
         this.storages = storages;
-    }
-
-    public String getApiKey() {
-        return apiKey;
-    }
-
-    public void setApiKey(String apiKey) {
-        this.apiKey = apiKey;
     }
 
     public String getAuthenticationType() {
