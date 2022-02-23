@@ -39,6 +39,8 @@ public class Credential implements CustomEntity {
 
     private String domainName;
 
+    private String passwordSecret;
+
     private String authenticationType;
 
     private String headerKey;
@@ -139,6 +141,14 @@ public class Credential implements CustomEntity {
 
     public void setDomainName(String domainName) {
         this.domainName = domainName;
+    }
+
+    public String getPasswordSecret() {
+        return passwordSecret;
+    }
+
+    public void setPasswordSecret(String passwordSecret) {
+        this.passwordSecret = passwordSecret;
     }
 
     public String getAuthenticationType() {
