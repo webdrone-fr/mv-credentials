@@ -31,6 +31,8 @@ public class Credential implements CustomEntity {
 
     private String publicKey;
 
+    private String refreshToken;
+
     private String status;
 
     @JsonProperty(required = true)
@@ -91,6 +93,14 @@ public class Credential implements CustomEntity {
 
     public void setPublicKey(String publicKey) {
         this.publicKey = publicKey;
+    }
+
+    public String getRefreshToken() {
+        return refreshToken;
+    }
+
+    public void setRefreshToken(String refreshToken) {
+        this.refreshToken = refreshToken;
     }
 
     public String getStatus() {
