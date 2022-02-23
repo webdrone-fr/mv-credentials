@@ -3,7 +3,6 @@ package org.meveo.model.customEntities;
 import org.meveo.model.CustomEntity;
 import java.util.List;
 import org.meveo.model.persistence.DBStorageType;
-import java.time.Instant;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -26,8 +25,6 @@ public class Credential implements CustomEntity {
     private String authenticationType;
 
     private String headerKey;
-
-    private Instant lastConnection;
 
     private String refreshToken;
 
@@ -77,14 +74,6 @@ public class Credential implements CustomEntity {
 
     public void setHeaderKey(String headerKey) {
         this.headerKey = headerKey;
-    }
-
-    public Instant getLastConnection() {
-        return lastConnection;
-    }
-
-    public void setLastConnection(Instant lastConnection) {
-        this.lastConnection = lastConnection;
     }
 
     public String getRefreshToken() {
