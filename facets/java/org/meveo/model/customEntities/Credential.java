@@ -3,6 +3,7 @@ package org.meveo.model.customEntities;
 import org.meveo.model.CustomEntity;
 import java.util.List;
 import org.meveo.model.persistence.DBStorageType;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 public class Credential implements CustomEntity {
@@ -28,6 +29,9 @@ public class Credential implements CustomEntity {
     private String publicKey;
 
     private String status;
+
+    @JsonProperty(required = true)
+    private String username;
 
     @Override()
     public String getUuid() {
@@ -84,6 +88,14 @@ public class Credential implements CustomEntity {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     @Override()
