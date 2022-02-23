@@ -35,8 +35,6 @@ public class Credential implements CustomEntity {
 
     private String privateKey;
 
-    private String password;
-
     private String domainName;
 
     private String passwordSecret;
@@ -123,14 +121,6 @@ public class Credential implements CustomEntity {
 
     public void setPrivateKey(String privateKey) {
         this.privateKey = privateKey;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public String getDomainName() {
