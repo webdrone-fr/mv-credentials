@@ -25,6 +25,8 @@ public class Credential implements CustomEntity {
 
     private String headerValue;
 
+    private String publicKey;
+
     private String status;
 
     @Override()
@@ -66,6 +68,14 @@ public class Credential implements CustomEntity {
 
     public void setHeaderValue(String headerValue) {
         this.headerValue = headerValue;
+    }
+
+    public String getPublicKey() {
+        return publicKey;
+    }
+
+    public void setPublicKey(String publicKey) {
+        this.publicKey = publicKey;
     }
 
     public String getStatus() {
